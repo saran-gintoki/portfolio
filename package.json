@@ -1,4 +1,5 @@
 {
+  "homepage": "http://saran-gintoki.github.io/portfolio.git",
   "name": "liveterm",
   "version": "0.1.0",
   "license": "MIT",
@@ -8,6 +9,8 @@
     "email": "contact@wensenwu.com"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -33,6 +36,7 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^6.1.0",
     "husky": "^8.0.1",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
